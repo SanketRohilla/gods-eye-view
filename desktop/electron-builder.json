@@ -1,0 +1,50 @@
+{
+  "appId": "io.github.sanketrohilla.godseyeview",
+  "productName": "GodsEyeView",
+  "asar": false,
+  "directories": {
+    "output": "dist"
+  },
+  "files": [
+    "desktop/**/*",
+    "src/**/*",
+    "server/**/*",
+    "public/**/*",
+    "build/**/*",
+    "index.html",
+    "vite.config.js",
+    "package.json"
+  ],
+  "linux": {
+    "target": [
+      {
+        "target": "AppImage",
+        "arch": ["x64"]
+      },
+      {
+        "target": "deb",
+        "arch": ["x64"]
+      }
+    ],
+    "category": "Science;Geoscience;Utility;",
+    "synopsis": "Real-time 3D Geospatial Intelligence Console",
+    "maintainer": "Sanket Rohilla <https://github.com/SanketRohilla>"
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      },
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true
+  }
+}
