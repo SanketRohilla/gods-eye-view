@@ -1013,7 +1013,7 @@ export function createAnalystEngine(providers) {
         km: view.viewRadiusKm,
       };
       scopeNote = `view:${Math.round(view.viewRadiusKm)}km`;
-      // TODO: "in view" is a radius around the camera centre, not the visible
+      // FIXME: "in view" is a radius around the camera centre, not the visible
       // footprint; the display detail says so until a footprint scope lands.
       scopeLabel = 'in view';
       scopeDetail = `within ${Math.round(view.viewRadiusKm)} km of the view centre`;
